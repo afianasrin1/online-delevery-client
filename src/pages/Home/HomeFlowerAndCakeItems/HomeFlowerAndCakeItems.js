@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiArrowUpRight } from "react-icons/fi";
+// import { FiArrowRight } from "react-icons/fi";
 const HomeFlowerAndCakeItems = () => {
   return (
     <div className="mb-16 mt-28">
@@ -10,7 +10,7 @@ const HomeFlowerAndCakeItems = () => {
           to="/recipes"
           className="flex items-center bg-red-500 py-2 px-3 rounded-md hover:bg-red-600 text-white"
         >
-          <span>View more</span> <FiArrowUpRight />
+          <span>View more</span>
         </Link>
       </div>
     </div>
