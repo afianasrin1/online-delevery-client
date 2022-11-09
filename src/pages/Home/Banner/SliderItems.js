@@ -9,7 +9,15 @@ const SliderItems = ({ slider }) => {
         <img src={image} alt="" className="w-full rounded-xl" />
       </div>
 
-      <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+      <div className="absolute flex justify-between transform  -translate-y-1/2  left-24 right-24 top-1/4">
+        <h2 className="text-3xl text-white w-1/2">
+          Reasonably priced for
+          <br />
+          flower and cake delivery
+        </h2>
+      </div>
+
+      <div className="absolute flex justify-between transform -translate-y-1/2  right-5 left-5 top-1/2">
         <a href={`#slide${prev}`} className="btn btn-circle">
           ❮
         </a>

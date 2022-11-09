@@ -1,4 +1,4 @@
-/* .carousel-img:after {
+.carousel-img:after {
   content: "";
   position: absolute;
   left: 0;
@@ -7,5 +7,5 @@
   height: 100%;
   border-radius: 12px;
   display: inline-block;
-  background: linear-gradient(90deg, #151515 0%, rgba(21, 21, 21, 0) 100%);
-} */
+  background: linear-gradient(to top, #070303 0%, rgba(192, 186, 186, 0) 100%);
+}
