@@ -8,9 +8,9 @@ const Home = () => {
   return (
     <div>
       <Slider />
+      <HomeFlowerAndCakeItems />
       <AboutUs />
       <ProductsQuality />
-      <HomeFlowerAndCakeItems />
     </div>
   );
 };
