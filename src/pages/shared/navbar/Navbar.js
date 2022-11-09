@@ -95,7 +95,7 @@ const Navbar = () => {
               ) : (
                 <div className="text-white">
                   <Link to="/login"> Login </Link>
-                  <Link to="/register"> Register </Link>
+                  <Link to="/signUp"> SignUp </Link>
                 </div>
               )}
             </>
@@ -235,7 +235,7 @@ const Navbar = () => {
                         ) : (
                           <>
                             <Link to="/login"> Login </Link>
-                            <Link to="/register"> Register </Link>
+                            <Link to="/signUp"> SignUp </Link>
                           </>
                         )}
                       </>

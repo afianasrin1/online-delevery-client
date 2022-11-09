@@ -6,6 +6,8 @@ import FlowerAndCakeItems from "../../pages/FlowerAndCakeItems/FlowerAndCakeItem
 import AboutUs from "../../pages/Home/AboutUs/AboutUs";
 import Home from "../../pages/Home/home/Home";
 import ProductsQuality from "../../pages/Home/ProductsAbout/ProductsQuality";
+import Login from "../../pages/login/Login";
+import SignUp from "../../pages/SignUp/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -19,6 +21,8 @@ export const router = createBrowserRouter([
       { path: "/productQuality", element: <ProductsQuality /> },
       { path: "/flowerAndCakeItems", element: <FlowerAndCakeItems /> },
       { path: "/blog", element: <Blog /> },
+      { path: "/login", element: <Login /> },
+      { path: "/signUp", element: <SignUp /> },
     ],
   },
 ]);
