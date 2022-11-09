@@ -6,7 +6,7 @@ const Blog = () => {
       <div className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
           <img
-            src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500"
+            src="https://blog.devart.com/wp-content/uploads/2021/12/sql-nosql.png"
             className="object-cover w-full h-64"
             alt=""
           />
@@ -18,9 +18,9 @@ const Blog = () => {
                 aria-label="Category"
                 title="traveling"
               >
-                traveling
+                SQL and NOSQL
               </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
+              <span className="text-gray-600">— 28 october 2022</span>
             </p>
             <a
               href="/"
@@ -47,7 +47,7 @@ const Blog = () => {
         </div>
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
           <img
-            src="https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="https://supertokens.com/static/b0172cabbcd583dd4ed222bdb83fc51a/9af93/jwt-structure.png"
             className="object-cover w-full h-64"
             alt=""
           />
@@ -59,9 +59,9 @@ const Blog = () => {
                 aria-label="Category"
                 title="traveling"
               >
-                traveling
+                JWT
               </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
+              <span className="text-gray-600">— 28 september 2022</span>
             </p>
             <a
               href="/"
@@ -89,7 +89,7 @@ const Blog = () => {
         </div>
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
           <img
-            src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+            src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2018/09/What-is-JavaScript-1.png"
             className="object-cover w-full h-64"
             alt=""
           />
@@ -101,9 +101,9 @@ const Blog = () => {
                 aria-label="Category"
                 title="traveling"
               >
-                traveling
+                javascript and NodeJS
               </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
+              <span className="text-gray-600">— 28 march 2020</span>
             </p>
             <a
               href="/"
@@ -130,6 +130,13 @@ const Blog = () => {
               Learn more
             </a>
           </div>
+        </div>
+        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
+          <img
+            src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_f0b606abb6d19089febc9faeeba5bc05/nodejs-development-services.png"
+            className="object-cover w-full h-64"
+            alt=""
+          />
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
               <a
@@ -138,9 +145,9 @@ const Blog = () => {
                 aria-label="Category"
                 title="traveling"
               >
-                traveling
+                NodeJS handle multiple requests
               </a>
-              <span className="text-gray-600">— 28 Dec 2020</span>
+              <span className="text-gray-600">— 28 april 2022</span>
             </p>
             <a
               href="/"
