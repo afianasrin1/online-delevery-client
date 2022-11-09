@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import photo from "../../../assets/Images/photo.avif";
-import ProductsQuality from "../ProductsAbout/ProductsQuality";
+
 const AboutUs = () => {
   return (
     <div className="my-20">
+      <div className="lg:w-1/2 py-4">
+        <h5 className="text-pink-900 pb-4 text-4xl text-center font-bold">
+          About Us
+        </h5>
+      </div>
       <div className="lg:flex gap-10">
         <div className="lg:w-1/2 py-4">
-          <h5 className="text-pink-900 pb-4 text-4xl font-bold">About Us</h5>
-          {/* <h2 className="lg:text-5xl text-2xl font-semibold pb-7">
-            10+ flavors in one <br className="hidden lg:block " /> place.
-          </h2> */}
           <p className="md:text-justify lg:pt-4 text-xl">
             get pretty gift is very leading online gift stores in Bangladesh. It
             has been doing this business providing gift delivery service in
