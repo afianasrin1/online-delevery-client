@@ -7,7 +7,9 @@ import AboutUs from "../../pages/Home/AboutUs/AboutUs";
 import Home from "../../pages/Home/home/Home";
 import ProductsQuality from "../../pages/Home/ProductsAbout/ProductsQuality";
 import Login from "../../pages/login/Login";
+import Profile from "../../pages/profile/Profile";
 import SignUp from "../../pages/SignUp/SignUp";
+import PrivatesRoutes from "../PrivateRoute/PrivateRoutes";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ export const router = createBrowserRouter([
       { path: "/blog", element: <Blog /> },
       { path: "/login", element: <Login /> },
       { path: "/signUp", element: <SignUp /> },
+      {
+        path: "/profile",
+        element: (
+          <PrivatesRoutes>
+            <Profile />
+          </PrivatesRoutes>
+        ),
+      },
     ],
   },
 ]);

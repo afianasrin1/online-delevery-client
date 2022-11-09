@@ -8,9 +8,9 @@ import { GoogleAuthProvider } from "firebase/auth";
 const Login = () => {
   const { singInUser, providerLogin } = useContext(AuthContext);
   const [errors, setErrors] = useState(null);
-  // const location = useLocation();
-  // const navigate = useNavigate();
-  // const from = location.state?.from?.pathname || "/";
+  const location = useLocation();
+  const navigate = useNavigate();
+  const from = location.state?.from?.pathname || "/";
   const loginUser = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -19,7 +19,7 @@ const Login = () => {
     singInUser(email, password)
       .then((result) => {
         const user = result.user;
-        // navigate(from, { replace: true });
+        navigate(from, { replace: true });
         setErrors("");
       })
       .catch((error) => {
@@ -34,7 +34,7 @@ const Login = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        // navigate(from, { replace: true });
+        navigate(from, { replace: true });
       })
       .catch((error) => {
         console.error(error);
