@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
 import useTitle from "../../hooks/Title";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import { FaStar } from "react-icons/fa";
+import { FaStarHalf } from "react-icons/fa";
 import { BiEdit } from "react-icons/bi";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
@@ -50,7 +50,7 @@ const OurReview = () => {
     <div className="py-8">
       {ourReview.length ? (
         <div>
-          <h1 className="text-3xl font-semibold text-center">My Reviews</h1>
+          <h1 className="text-3xl font-semibold text-center">Our Review</h1>
           <div className="flex flex-col pt-4 gap-5">
             {ourReview.map((review) => (
               <div
@@ -59,10 +59,10 @@ const OurReview = () => {
               >
                 <div className="sm:flex gap-3 ">
                   <PhotoProvider>
-                    <PhotoView src={review.recipeImg}>
+                    <PhotoView src={review.flowerAndCakeItemImg}>
                       <img
                         className="sm:w-[200px] w-full rounded-l-lg cursor-pointer"
-                        src={review.recipeImg}
+                        src={review.flowerAndCakeItemImg}
                         alt=""
                       />
                     </PhotoView>
@@ -77,12 +77,12 @@ const OurReview = () => {
                     <p title="Client Review" className="text-gray-700">
                       {review.message}
                     </p>
-                    <h1 className="flex text-gray-700 items-center pt-3">
+                    <h1 className="flex text-gray-900 items-center pt-3">
                       <span className="font-semibold">Starts:</span>{" "}
                       <small className="ml-2 font-bold">{review.star}</small>{" "}
-                      <small className="pt-1 text-red-500">
+                      <small className="pt-1 text-orange-600">
                         {" "}
-                        <FaStar />
+                        <FaStarHalf />
                       </small>
                     </h1>
                   </div>
@@ -91,13 +91,13 @@ const OurReview = () => {
                   <Link to={`/updateReview/${review._id}`}>
                     <BiEdit
                       title="Update Review"
-                      className="cursor-pointer text-red-500 text-2xl"
+                      className="cursor-pointer text-pink-900 text-2xl"
                     />
                   </Link>
                   <AiOutlineDelete
                     onClick={() => handleDelete(review._id)}
                     title="Remove item"
-                    className="cursor-pointer text-red-500 text-2xl"
+                    className="cursor-pointer text-pink-900 text-2xl"
                   />
                 </div>
               </div>
@@ -106,7 +106,7 @@ const OurReview = () => {
         </div>
       ) : (
         <h1 className="text-3xl font-bold text-red-500 text-center">
-          No Reviews were Added !
+          Reviews are not Added
         </h1>
       )}
     </div>
