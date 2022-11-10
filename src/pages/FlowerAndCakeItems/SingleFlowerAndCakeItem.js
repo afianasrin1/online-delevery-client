@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { BsBoxArrowUpLeft } from "react-icons/bs";
+import { BsBoxArrowRight } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { AuthContext } from "../../context/AuthProvider/AuthProvider";
@@ -11,7 +11,7 @@ const SingleFlowerAndCakeItem = () => {
   const [review, setReview] = useState(false);
   const { id } = useParams();
   const [flowerAndCakeItem, setFlowerAndCakeItem] = useState({});
-  const { img, name, price, ratings, description, _id } = flowerAndCakeItem;
+  const { img, name, price, rating, description, _id } = flowerAndCakeItem;
 
   useEffect(() => {
     fetch(` http://localhost:5000/flowerAndCakeItems/${id}`)
@@ -59,9 +59,9 @@ const SingleFlowerAndCakeItem = () => {
         <div className="pt-4 border-t-2 px-4 pb-4 border-gray-500">
           <div className="text-gray-800">
             <p>Price: ${price}</p>
-            <p>Ratings: {ratings}</p>
+            <p>Rating: {rating}</p>
           </div>
-          <h1 className="text-gray-900 pb-4 sm:text-xl text-sm text-center font-bold transition-all hover:text-red-500">
+          <h1 className="text-gray-900 pb-4 sm:text-xl text-sm text-center font-bold transition-all hover:text-pink-900">
             {name}
           </h1>
           <p className="text-gray-800 text-justify">{description}</p>
@@ -72,14 +72,14 @@ const SingleFlowerAndCakeItem = () => {
               className="text-pink-900 text-2xl"
             >
               {" "}
-              <BsBoxArrowUpLeft />
+              <BsBoxArrowRight />
             </Link>
           </div>
         </div>
         <div className="px-4 lg:block hidden mt-3">
           <div
             name="Review Here please click now"
-            className="cursor-pointer text-red-500 hover:text-gray-900 font-bold"
+            className="cursor-pointer text-pink-900 hover:text-pink-500 font-bold"
             onClick={() => setReview(!review)}
           >
             {review ? undefined : (
@@ -117,16 +117,16 @@ const SingleFlowerAndCakeItem = () => {
                       name="star"
                       required
                       type="number"
-                      className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-red-500 border-2 bg-white"
+                      className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-pink-900 border-2 bg-white"
                       placeholder="Give Star*"
                     />
                     <div className="md:flex py-3 gap-8 ">
                       <input
-                        name="name"
+                        userName="userName"
                         defaultValue={user.displayName}
                         required
                         type="text"
-                        className="w-full px-4 py-2 md:mb-0 mb-3 outline-none focus:border-red-500 border-2 bg-white"
+                        className="w-full px-4 py-2 md:mb-0 mb-3 outline-none focus:border-pink-900 border-2 bg-white"
                         placeholder="Your Name*"
                       />
                       <input
@@ -146,7 +146,7 @@ const SingleFlowerAndCakeItem = () => {
                   </form>
                 ) : (
                   <div className="pb-3 font-bold text-gray-800">
-                    if you want to give a review please before
+                    if you want to give a review please
                     <Link className="text-pink-900 ml-2" to="/login">
                       login Now
                     </Link>
@@ -167,7 +167,7 @@ const SingleFlowerAndCakeItem = () => {
           onClick={() => setReview(!review)}
         >
           {review ? undefined : (
-            <button className="mb-3  inline-block">Add Review</button>
+            <button className="mb-3  inline-block ">Add Review</button>
           )}
         </div>
         <div>
@@ -189,7 +189,7 @@ const SingleFlowerAndCakeItem = () => {
                     </span>
                   </div>
                   <textarea
-                    className="w-full px-4 py-2 outline-none focus:border-red-500 border-2 bg-white"
+                    className="w-full px-4 py-2 outline-none focus:border-pink-900 border-2 bg-white"
                     name="message"
                     required
                     id=""
@@ -201,7 +201,7 @@ const SingleFlowerAndCakeItem = () => {
                     name="star"
                     required
                     type="number"
-                    className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-red-500 border-2 bg-white"
+                    className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-pink-900 border-2 bg-white"
                     placeholder="Give Star*"
                   />
                   <div className="md:flex py-3 gap-8 ">
@@ -210,7 +210,7 @@ const SingleFlowerAndCakeItem = () => {
                       defaultValue={user.displayName}
                       required
                       type="text"
-                      className="w-full px-4  py-2 md:mb-0 mb-3 outline-none focus:border-red-500 border-2 bg-white"
+                      className="w-full px-4  py-2 md:mb-0 mb-3 outline-none focus:border-pink-900 border-2 bg-white"
                       placeholder="Your Name*"
                     />
                     <input
@@ -218,20 +218,20 @@ const SingleFlowerAndCakeItem = () => {
                       readOnly
                       required
                       type="text"
-                      className="w-full px-4 py-2 outline-none focus:border-red-500 border-2 bg-white"
+                      className="w-full px-4 py-2 outline-none focus:border-pink-900 border-2 bg-white"
                       placeholder="Your Email*"
                     />
                   </div>
                   <input
-                    className="cursor-pointer bg-red-600 py-2 px-6 inline-block  mb-5 mt-2 rounded hover:bg-gray-900 transition-all text-white"
+                    className="cursor-pointer bg-pink-900 py-2 px-6 inline-block  mb-5 mt-2 rounded hover:bg-gray-900 transition-all text-white"
                     type="submit"
                     value="Post Review"
                   />
                 </form>
               ) : (
                 <div className="pb-3 font-bold text-gray-800">
-                  if you want to give a review Please before
-                  <Link className="text-red-500 ml-2" to="/signin">
+                  if you want to give a review Please
+                  <Link className="text-pink-900 ml-2" to="/login">
                     login Now
                   </Link>
                 </div>

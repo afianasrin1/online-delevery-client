@@ -44,7 +44,7 @@ const FlowerAndCakeItems = () => {
                 <p className=" px-4  flex items-center justify-between py-2  text-pink-900 text-sm font-bold">
                   <span>Flower&Cake</span>
                   <Link
-                    to={`/recipe/${flowerAndCakeItem._id}`}
+                    to={`/flowerAndCakeItem/${flowerAndCakeItem._id}`}
                     name="flowerAndCakeItem Details"
                     className="text-xl text-pink-900 hover:text-pink-600 transition-all  font-bold"
                   >
