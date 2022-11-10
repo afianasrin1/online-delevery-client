@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const FlowerAndCakeItemsCard = ({ flowerAndCakeItem }) => {
   const { _id, name, img, price, description, rating } = flowerAndCakeItem;

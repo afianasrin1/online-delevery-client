@@ -1,65 +1,58 @@
-[
-  {
-    "_id": "635a0c0b64a6d231228942ae",
-    "flowerAndCakeItem_id": "01",
-    "name": "Dolon Chapa Flower Bouquet",
-    "img": "https://i.pinimg.com/originals/64/10/2a/64102a9e29011695c3d6d5d4376a16e1.jpg",
-    "price": "780.00",
-    "rating": "4.1",
-    "description": "Dolon Chapa: .The name of the flower in Bangladesh is Dolon chapa ( দোলনচাঁপা ), but it belongs to the ginger family Zingiberaceae.A Nicely Fragrant white flower. This flower is famous for it's fragrance. It's aroma attract the attention of all flower lover people.You can send this hand bouquet of 30 Dolon Chapa to your cherished one on any occasion or make her/his day more special."
-  },
-  {
-    "_id": "635a0c0b64a6d231228942af",
-    "flowerAndCakeItem_id": "02",
-    "name": "Charming Pink Bouquet",
-    "img": "https://i.pinimg.com/474x/24/cf/91/24cf91cd49e9989a248fd23694bc4d65.jpg",
-    "price": "800.00",
-    "rating": "5",
-    "description": "Gerbera L. is a genus of plants in the Asteraceae family. The first scientific description of a Gerbera was made by J. D. Hooker in Curtis's Botanical Magazine in 1889 when he described Gerbera jamesonii, a South African species also known as Transvaal daisy or Barberton daisy"
-  },
-  {
-    "_id": "635b591a1dafe382a9da8c96",
-    "flowerAndCakeItem_id": "03",
-    "name": "White Elegancy",
-    "img": "https://dcjctrdi66uhm.cloudfront.net/wp-content/uploads/2019/06/13171312/15.jpg",
-    "price": "1000.00",
-    "rating": "4.2",
-    "description": "A bouquet with sensational 15 white gladiolus, 12 white gerbera and 10 mum flowers wrapped in white ribbons and white tissue papers to surprise anyone in their big day. White is the symbol of purity and eternity. All these flowers are imported. We provide all the arrangements to keep the flower fresh."
-  },
-  {
-    "_id": "635a0c0b64a6d231289442af",
-    "flowerAndCakeItem_id": "04",
-    "name": "chocolate cake",
-    "img": "https://i.ytimg.com/vi/wFRYbLZ3p-o/maxresdefault.jpg",
-    "price": "1600.00",
-    "rating": "4",
-    "description": "A chocolate cake is a cake made with chocolate or cocoa. The ingredients are put into a bowl and mixed together; then the mixed ingredients are put into a cake tin and put in an oven until it is fully cooked. Then the cake is taken out of the oven and placed on a cooling stand."
-  },
-  {
-    "_id": "638b5afc1dafe882a9da8c98",
-    "flowerAndCakeItem_id": "05",
-    "name": "Strawberry Mousse Cake",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tjDz-bjunQtEjWXJfh_MmmT6QVyfIwlA1A&usqp=CAU",
-    "price": "2000.00",
-    "rating": "5.0",
-    "description": "Strawberry Mousse Cake is one of those recipes that are perfect for summer picnics, gatherings and birthdays (I wouldn’t mind getting it for Valentine’s day though). Sure, making a cake at home takes some time, but there’s nothing better than a homemade fruit cake, made without any artificial flavor and/or coloring. It’s the best and it’s a true love statement. As many of you know, we test the recipes a few times before posting them here on the blog and for this cake, we had a passionate strawberry dessert lover - my mom. She would always pick strawberry desserts over any other summer desserts. It’s her thing and she loves it so much. With that comes a lot of experience in the strawberry dessert aisle. So imagine our happiness when she happily approved this sweet treat while tasting this simple strawberry mousse cake. This strawberry cake is best described like this: Two thin layers of crumbly and nutty almond sponge cake, rich layer of light and smooth strawberry mousse, a generous amount of fresh strawberries and decorated with meringue cookies, almonds flakes, fresh strawberries, and powdered sugar. It’s such a treat."
-  },
-  {
-    "_id": "635b5afc1dafe382a9da8c78",
-    "flowerAndCakeItem_id": "06",
-    "name": "The mughal empire kacchi lover biryani package",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDssgyDRMOSSP89_P-bbNuoFrB_hIKk9sT0w&usqp=CAU",
-    "price": "300.00",
-    "rating": "5.0",
-    "description": "What is kacchi biryani? Kacchi means 'raw' - When the meat is added raw to the biryani pot, then it is referred to as Kacchi Biryani whereas Pakki is when the completely or partially cooked meat is added to the biryani pot and is sometimes layered"
-  },
-  {
-    "_id": "635b5ba51dafe382a9da8c9a",
-    "flowerAndCakeItem_id": "07",
-    "name": "White nice Cake",
-    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlE-Cg4Cax5PAAJDZ50wJRgWzGirfrUq_sEQ&usqp=CAU",
-    "price": "3500.00",
-    "rating": "4.8",
-    "description": "white cake typically uses all egg whites, no yolks. This means less fat and more sponginess. White cake recipes might also call for a combination of butter and shortening to tone down the yellow hue of a pure butter cake."
-  }
-]
+// [
+//   {
+//     "flowerAndCakeItem_id": "01",
+//     "name": "Dolon Chapa Flower Bouquet",
+//     "img": "https://i.pinimg.com/originals/64/10/2a/64102a9e29011695c3d6d5d4376a16e1.jpg",
+//     "price": "780.00",
+//     "rating": "4.1",
+//     "description": "Dolon Chapa: .The name of the flower in Bangladesh is Dolon chapa ( দোলনচাঁপা ), but it belongs to the ginger family Zingiberaceae.A Nicely Fragrant white flower. This flower is famous for it's fragrance. It's aroma attract the attention of all flower lover people.You can send this hand bouquet of 30 Dolon Chapa to your cherished one on any occasion or make her/his day more special."
+//   },
+//   {
+//     "flowerAndCakeItem_id": "02",
+//     "name": "Charming Pink Bouquet",
+//     "img": "https://i.pinimg.com/474x/24/cf/91/24cf91cd49e9989a248fd23694bc4d65.jpg",
+//     "price": "800.00",
+//     "rating": "5",
+//     "description": "Gerbera L. is a genus of plants in the Asteraceae family. The first scientific description of a Gerbera was made by J. D. Hooker in Curtis's Botanical Magazine in 1889 when he described Gerbera jamesonii, a South African species also known as Transvaal daisy or Barberton daisy"
+//   },
+//   {
+//     "flowerAndCakeItem_id": "03",
+//     "name": "White Elegancy",
+//     "img": "https://dcjctrdi66uhm.cloudfront.net/wp-content/uploads/2019/06/13171312/15.jpg",
+//     "price": "1000.00",
+//     "rating": "4.2",
+//     "description": "A bouquet with sensational 15 white gladiolus, 12 white gerbera and 10 mum flowers wrapped in white ribbons and white tissue papers to surprise anyone in their big day. White is the symbol of purity and eternity. All these flowers are imported. We provide all the arrangements to keep the flower fresh."
+//   },
+//   {
+//     "flowerAndCakeItem_id": "04",
+//     "name": "chocolate cake",
+//     "img": "https://i.ytimg.com/vi/wFRYbLZ3p-o/maxresdefault.jpg",
+//     "price": "1600.00",
+//     "rating": "4",
+//     "description": "A chocolate cake is a cake made with chocolate or cocoa. The ingredients are put into a bowl and mixed together; then the mixed ingredients are put into a cake tin and put in an oven until it is fully cooked. Then the cake is taken out of the oven and placed on a cooling stand."
+//   },
+//   {
+//     "flowerAndCakeItem_id": "05",
+//     "name": "Strawberry Mousse Cake",
+//     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tjDz-bjunQtEjWXJfh_MmmT6QVyfIwlA1A&usqp=CAU",
+//     "price": "2000.00",
+//     "rating": "5.0",
+//     "description": "Strawberry Mousse Cake is one of those recipes that are perfect for summer picnics, gatherings and birthdays (I wouldn’t mind getting it for Valentine’s day though). Sure, making a cake at home takes some time, but there’s nothing better than a homemade fruit cake, made without any artificial flavor and/or coloring. It’s the best and it’s a true love statement. As many of you know, we test the recipes a few times before posting them here on the blog and for this cake, we had a passionate strawberry dessert lover - my mom. She would always pick strawberry desserts over any other summer desserts. It’s her thing and she loves it so much. With that comes a lot of experience in the strawberry dessert aisle. So imagine our happiness when she happily approved this sweet treat while tasting this simple strawberry mousse cake. This strawberry cake is best described like this: Two thin layers of crumbly and nutty almond sponge cake, rich layer of light and smooth strawberry mousse, a generous amount of fresh strawberries and decorated with meringue cookies, almonds flakes, fresh strawberries, and powdered sugar. It’s such a treat."
+//   },
+//   {
+//     "flowerAndCakeItem_id": "06",
+//     "name": "The mughal empire kacchi lover biryani package",
+//     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDssgyDRMOSSP89_P-bbNuoFrB_hIKk9sT0w&usqp=CAU",
+//     "price": "300.00",
+//     "rating": "5.0",
+//     "description": "What is kacchi biryani? Kacchi means 'raw' - When the meat is added raw to the biryani pot, then it is referred to as Kacchi Biryani whereas Pakki is when the completely or partially cooked meat is added to the biryani pot and is sometimes layered"
+//   },
+//   {
+//     "flowerAndCakeItem_id": "07",
+//     "name": "White nice Cake",
+//     "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlE-Cg4Cax5PAAJDZ50wJRgWzGirfrUq_sEQ&usqp=CAU",
+//     "price": "3500.00",
+//     "rating": "4.8",
+//     "description": "white cake typically uses all egg whites, no yolks. This means less fat and more sponginess. White cake recipes might also call for a combination of butter and shortening to tone down the yellow hue of a pure butter cake."
+//   }
+// ]

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast";
+
 import FlowerAndCakeItemsCard from "./FlowerAndCakeItemsCard";
 
 const FlowerAndCakeItems = () => {
   const [flowerAndCakeItems, setFlowerAndCakeItems] = useState([]);
   useEffect(() => {
-    fetch("flowerAndCakeItems.json")
+    fetch("http://localhost:5000/flowerAndCakeItems")
       .then((res) => res.json())
       .then((data) => setFlowerAndCakeItems(data));
   }, []);
