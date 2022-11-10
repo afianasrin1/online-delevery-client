@@ -7,8 +7,8 @@ const AddFlowerAndCakeItem = () => {
   const addFlowerAndCakeItem = (e) => {
     e.preventDefault();
     const form = e.target;
-    const flowerAndCakeItemName = form.recipeName.value;
-    const flowerAndCakeItemPhotoUrl = form.recipePhotoUrl.value;
+    const flowerAndCakeItemName = form.flowerAndCakeItemName.value;
+    const flowerAndCakeItemPhotoUrl = form.flowerAndCakeItemPhotoUrl.value;
     const description = form.description.value;
     const price = form.price.value;
     const rating = form.rating.value;

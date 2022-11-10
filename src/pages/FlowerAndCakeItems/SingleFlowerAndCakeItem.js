@@ -11,7 +11,7 @@ const SingleFlowerAndCakeItem = () => {
   const [review, setReview] = useState(false);
   const { id } = useParams();
   const [flowerAndCakeItem, setFlowerAndCakeItem] = useState({});
-  const { img, title, price, rating, description, _id } = flowerAndCakeItem;
+  const { img, title, price, rating, details, _id } = flowerAndCakeItem;
 
   useEffect(() => {
     fetch(` http://localhost:5000/flowerAndCakeItems/${id}`)
@@ -64,7 +64,7 @@ const SingleFlowerAndCakeItem = () => {
           <h1 className="text-gray-900 pb-4 sm:text-xl text-sm text-center font-bold transition-all hover:text-pink-900">
             {title}
           </h1>
-          <p className="text-gray-800 text-justify">{description}</p>
+          <p className="text-gray-800 text-justify">{details}</p>
           <div className="mt-3 flex justify-end">
             <Link
               name="See All FlowerAndCakeItem."

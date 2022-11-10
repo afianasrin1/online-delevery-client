@@ -42,7 +42,7 @@ const HomeFlowerAndCakeItems = () => {
                   </h1>
                 </Link>
                 <p className="text-gray-700 pt-4 text-justify ">
-                  {flowerAndCakeItem.description.slice(0, 100)}...
+                  {flowerAndCakeItem.details.slice(0, 100)}...
                 </p>
               </div>
 

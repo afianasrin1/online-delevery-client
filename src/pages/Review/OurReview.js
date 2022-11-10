@@ -12,16 +12,13 @@ const OurReview = () => {
   const { user, userLogOut } = useContext(AuthContext);
   const [ourReview, setOurReview] = useState([]);
   useEffect(() => {
-    fetch(
-      ` https://food-masty-server.vercel.app/myReview?email=${user?.email}`,
-      {
-        headers: {
-          authorization: `FlowerAndCakeItem ${localStorage.getItem(
-            "FlowerAndCakeItem-token"
-          )}`,
-        },
-      }
-    )
+    fetch(`  http://localhost:5000/ourReview?email=${user?.email}`, {
+      headers: {
+        authorization: `FlowerAndCakeItem ${localStorage.getItem(
+          "FlowerAndCakeItem-token"
+        )}`,
+      },
+    })
       .then((res) => {
         if (res.status === 401 || res.status === 403) {
           return userLogOut();
@@ -35,7 +32,7 @@ const OurReview = () => {
       "Are you sure ? You want to delete this review?"
     );
     if (confirm) {
-      fetch(` https://food-masty-server.vercel.app/deleteReview/${id}`, {
+      fetch(` http://localhost:5000/review/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

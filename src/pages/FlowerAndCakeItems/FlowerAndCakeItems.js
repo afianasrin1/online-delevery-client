@@ -37,7 +37,7 @@ const FlowerAndCakeItems = () => {
                   </h1>
                 </Link>
                 <p className="text-gray-700 pt-4 text-justify ">
-                  {flowerAndCakeItem.description.slice(0, 100)}...
+                  {flowerAndCakeItem.details.slice(0, 100)}...
                 </p>
               </div>
               <div className="pt-6 pb-2  absolute bottom-0 w-full">

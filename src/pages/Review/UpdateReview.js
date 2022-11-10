@@ -20,7 +20,7 @@ const UpdateReview = () => {
 
       userImg,
     };
-    fetch(` https://food-masty-server.vercel.app/updateReview/${review?._id}`, {
+    fetch(`http://localhost:5000/review/${review?._id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
