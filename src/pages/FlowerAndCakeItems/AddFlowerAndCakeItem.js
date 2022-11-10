@@ -19,7 +19,7 @@ const AddFlowerAndCakeItem = () => {
       rating: rating,
       details: description,
     };
-    fetch(` https://food-masty-server.vercel.app/recipes`, {
+    fetch(` http://localhost:5000/flowerAndCakeItems`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -131,7 +131,7 @@ const AddFlowerAndCakeItem = () => {
           type="submit"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
-          FlowerAndCakeItem Recipe
+          FlowerAndCakeItem
         </button>
       </form>
     </div>

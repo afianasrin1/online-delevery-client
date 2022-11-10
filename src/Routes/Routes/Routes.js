@@ -11,6 +11,7 @@ import ProductsQuality from "../../pages/Home/ProductsAbout/ProductsQuality";
 import Login from "../../pages/login/Login";
 import Profile from "../../pages/profile/Profile";
 import Review from "../../pages/Review/Review";
+import UpdateReview from "../../pages/Review/UpdateReview";
 import SignUp from "../../pages/SignUp/SignUp";
 import PrivatesRoutes from "../PrivateRoute/PrivateRoutes";
 
@@ -22,11 +23,7 @@ export const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/home", element: <Home /> },
-      { path: "/aboutUs", element: <AboutUs /> },
-      { path: "/productQuality", element: <ProductsQuality /> },
-      { path: "/blog", element: <Blog /> },
-      { path: "/login", element: <Login /> },
-      { path: "/signUp", element: <SignUp /> },
+
       {
         path: "/flowerAndCakeItems",
         loader: async () => fetch("http://localhost:5000/flowerAndCakeItems"),
@@ -42,6 +39,7 @@ export const router = createBrowserRouter([
           </PrivatesRoutes>
         ),
       },
+
       {
         path: "/review",
         element: (
@@ -50,7 +48,21 @@ export const router = createBrowserRouter([
           </PrivatesRoutes>
         ),
       },
-
+      {
+        path: "/updateReview/:id",
+        loader: async ({ params }) =>
+          fetch(` http://localhost:5000/reviewOne/${params.id}`),
+        element: (
+          <PrivatesRoutes>
+            <UpdateReview />
+          </PrivatesRoutes>
+        ),
+      },
+      { path: "/aboutUs", element: <AboutUs /> },
+      { path: "/productQuality", element: <ProductsQuality /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/login", element: <Login /> },
+      { path: "/signUp", element: <SignUp /> },
       {
         path: "/profile",
         element: (

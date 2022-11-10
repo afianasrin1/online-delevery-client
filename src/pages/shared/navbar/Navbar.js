@@ -43,7 +43,7 @@ const Navbar = () => {
                   to="/home"
                   aria-label="Home"
                   title="Home"
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                 >
                   Home
                 </Link>
@@ -53,17 +53,46 @@ const Navbar = () => {
                   to="/flowerAndCakeItems"
                   aria-label="FlowerAndCakeItems "
                   title="FlowerAndCakeItems "
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                 >
                   FlowerAndCakeItems
                 </Link>
               </li>
+              {user?.email ? (
+                <>
+                  <li>
+                    <Link
+                      to="/addFlowerAndCakeItem"
+                      aria-label="AddFlowerAndCakeItem"
+                      title="AddFlowerAndCakeItem"
+                      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
+                    >
+                      Add Flower&CakeItem
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/review"
+                      aria-label="Our Review"
+                      title="Our Review"
+                      className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
+                      // className={({ isActive }) =>
+                      //   isActive
+                      //     ? "font-medium tracking-wide text-red-400  transition-colors duration-200 hover:text-pink-500"
+                      //     : "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-pink-500"
+                      // }
+                    >
+                      OurReview
+                    </Link>
+                  </li>
+                </>
+              ) : undefined}
               <li>
                 <Link
                   to="/aboutUs"
                   aria-label="AboutUs"
                   title="AboutUs"
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                 >
                   AboutUs
                 </Link>
@@ -73,7 +102,7 @@ const Navbar = () => {
                   to="/blog"
                   aria-label="Blog"
                   title="Blog"
-                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                 >
                   Blog
                 </Link>
@@ -184,7 +213,7 @@ const Navbar = () => {
                           to="/home"
                           aria-label="Home"
                           title="Home"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-pink-500"
                         >
                           Home
                         </Link>
@@ -194,17 +223,51 @@ const Navbar = () => {
                           to="/flowerAndCakeItems"
                           aria-label="FlowerAndCakeItems"
                           title="FlowerAndCakeItems"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-pink-500"
                         >
                           FlowerAndCakeItems
                         </Link>
                       </li>
+                      {user?.email ? (
+                        <>
+                          <li>
+                            <Link
+                              to="/addFlowerAndCakeItem"
+                              aria-label="AddFlowerAndCakeItem"
+                              title="AddFlowerAndCakeItem"
+                              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
+                              // className={({ isActive }) =>
+                              //   isActive
+                              //     ? "font-medium tracking-wide text-red-400  transition-colors duration-200 hover:text-pink-500"
+                              //     : "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-pink-500"
+                              // }
+                            >
+                              Add Flower&CakeItem
+                            </Link>
+                          </li>
+                          <li>
+                            <Link
+                              to="/review"
+                              aria-label="Our Review"
+                              title="Our Review"
+                              className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
+                              // className={({ isActive }) =>
+                              //   isActive
+                              //     ? "font-medium tracking-wide text-red-400  transition-colors duration-200 hover:text-pink-500"
+                              //     : "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-pink-500"
+                              // }
+                            >
+                              MyReviews
+                            </Link>
+                          </li>
+                        </>
+                      ) : undefined}
                       <li>
                         <Link
                           to="/aboutUs"
                           aria-label=" AboutUs"
                           title=" AboutUs"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-pink-500"
                         >
                           AboutUs
                         </Link>
@@ -214,7 +277,7 @@ const Navbar = () => {
                           to="/blog"
                           aria-label="Blog"
                           title="Blog"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-pink-500"
                         >
                           Blog
                         </Link>
