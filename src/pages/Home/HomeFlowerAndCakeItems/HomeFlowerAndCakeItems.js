@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import AOS from "aos";
-import { HiArrowLongRight } from "react-icons/hi2";
+
+import { FaArrowAltCircleRight } from "react-icons/fa";
 const HomeFlowerAndCakeItems = () => {
   const [flowerAndCakeItems, setFlowerAndCakeItems] = useState([]);
   useEffect(() => {
@@ -18,17 +19,6 @@ const HomeFlowerAndCakeItems = () => {
   }, []);
   return (
     <div className="mb-16 mt-28">
-      <div className="flex  justify-between border-b border-gray-400 pb-5">
-        <h1 className="text-4xl font-semibold">
-          Recent Added FlowerAndCakeItems
-        </h1>
-        <Link
-          to="/flowerAndCakeItems"
-          className="flex items-center bg-pink-900 py-2 px-3 rounded-md hover:bg-pink-500 text-white"
-        >
-          <span>See All</span>
-        </Link>
-      </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-3 mt-10">
         {flowerAndCakeItems.map((flowerAndCakeItem) => (
           <div key={flowerAndCakeItem._id}>
@@ -46,7 +36,7 @@ const HomeFlowerAndCakeItems = () => {
                 <Link to={`/flowerAndCakeItem/${flowerAndCakeItem._id}`}>
                   <h1
                     name="Click for details"
-                    className="text-gray-900 text-xl text-center font-bold transition-all hover:text-red-500"
+                    className="text-gray-900 text-xl text-center font-bold transition-all hover:text-pink-900"
                   >
                     {flowerAndCakeItem.name}
                   </h1>
@@ -57,20 +47,29 @@ const HomeFlowerAndCakeItems = () => {
               </div>
 
               <div className="pt-6 pb-2 absolute bottom-0	w-full  ">
-                <p className="uppercase px-4 border-t flex items-center justify-between border-gray-400 border-b py-2  text-black text-sm font-bold">
-                  <span>Item</span>{" "}
+                <p className=" px-4  flex items-center justify-between py-2  text-pink-900 text-sm font-bold">
+                  <span>SingleItem</span>
                   <Link
                     to={`/flowerAndCakeItem/${flowerAndCakeItem._id}`}
-                    title="flowerAndCakeItem Details"
+                    name="flowerAndCakeItem Details"
                     className="text-xl text-pink-900 hover:text-pink-500 transition-all  font-bold"
                   >
-                    <HiArrowLongRight />
+                    <FaArrowAltCircleRight />
                   </Link>
                 </p>
               </div>
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex  justify-center  pb-5 pt-8">
+        <h1 className="text-3xl font-semibold">More FlowerAndCakeItems</h1>
+        <Link
+          to="/flowerAndCakeItems"
+          className="flex items-center bg-pink-900 py-2 px-3 rounded-md hover:bg-pink-500 text-white"
+        >
+          <span>See All</span>
+        </Link>
       </div>
     </div>
   );
