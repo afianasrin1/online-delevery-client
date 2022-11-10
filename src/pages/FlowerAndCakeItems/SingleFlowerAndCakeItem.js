@@ -11,7 +11,7 @@ const SingleFlowerAndCakeItem = () => {
   const [review, setReview] = useState(false);
   const { id } = useParams();
   const [flowerAndCakeItem, setFlowerAndCakeItem] = useState({});
-  const { img, name, price, rating, description, _id } = flowerAndCakeItem;
+  const { img, title, price, rating, description, _id } = flowerAndCakeItem;
 
   useEffect(() => {
     fetch(` http://localhost:5000/flowerAndCakeItems/${id}`)
@@ -25,19 +25,19 @@ const SingleFlowerAndCakeItem = () => {
     const message = form.message.value;
     const userImg = user.photoURL;
     const email = user.email;
-    const userName = form.userName.value;
+    const name = form.name.value;
     const star = form.star.value;
     const review = {
       message,
       star,
       email,
-      userName,
+      title,
       userImg,
       name,
       flowerAndCakeItemImg: img,
       reviewId: _id,
     };
-    fetch(" https://food-masty-server.vercel.app/review", {
+    fetch(" http://localhost:5000/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -62,7 +62,7 @@ const SingleFlowerAndCakeItem = () => {
             <p>Rating: {rating}</p>
           </div>
           <h1 className="text-gray-900 pb-4 sm:text-xl text-sm text-center font-bold transition-all hover:text-pink-900">
-            {name}
+            {title}
           </h1>
           <p className="text-gray-800 text-justify">{description}</p>
           <div className="mt-3 flex justify-end">
@@ -93,8 +93,8 @@ const SingleFlowerAndCakeItem = () => {
                 {user?.email ? (
                   <form onSubmit={handleReview}>
                     <div className="flex justify-between items-center pr-6">
-                      <h1 className="text-gray-900 uppercase font-semibold pb-3">
-                        give a review
+                      <h1 className="text-Pink-900 font-semibold pb-3">
+                        Please Give Review
                       </h1>
                       <span
                         title="Hide from"
@@ -118,16 +118,16 @@ const SingleFlowerAndCakeItem = () => {
                       required
                       type="number"
                       className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-pink-900 border-2 bg-white"
-                      placeholder="Give Star*"
+                      placeholder="Give rating"
                     />
                     <div className="md:flex py-3 gap-8 ">
                       <input
-                        userName="userName"
+                        name="name"
                         defaultValue={user.displayName}
                         required
                         type="text"
                         className="w-full px-4 py-2 md:mb-0 mb-3 outline-none focus:border-pink-900 border-2 bg-white"
-                        placeholder="Your Name*"
+                        placeholder="Your Name"
                       />
                       <input
                         defaultValue={user.email}
@@ -135,7 +135,7 @@ const SingleFlowerAndCakeItem = () => {
                         required
                         type="text"
                         className="w-full px-4 py-2 outline-none focus:border-pink-900 border-2 bg-white"
-                        placeholder="Your Email*"
+                        placeholder="Your Email"
                       />
                     </div>
                     <input
@@ -177,8 +177,8 @@ const SingleFlowerAndCakeItem = () => {
               {user?.email ? (
                 <form onSubmit={handleReview}>
                   <div className="flex justify-between items-center pr-6">
-                    <h1 className="text-gray-200 uppercase font-semibold pb-3">
-                      give a review
+                    <h1 className="text-pink-900  font-semibold pb-3">
+                      Please Give Review
                     </h1>
                     <span
                       title="Hide from"
@@ -202,7 +202,7 @@ const SingleFlowerAndCakeItem = () => {
                     required
                     type="number"
                     className="w-full px-4 py-2 md:mb-0  mt-1 outline-none focus:border-pink-900 border-2 bg-white"
-                    placeholder="Give Star*"
+                    placeholder="Give rating"
                   />
                   <div className="md:flex py-3 gap-8 ">
                     <input
@@ -211,7 +211,7 @@ const SingleFlowerAndCakeItem = () => {
                       required
                       type="text"
                       className="w-full px-4  py-2 md:mb-0 mb-3 outline-none focus:border-pink-900 border-2 bg-white"
-                      placeholder="Your Name*"
+                      placeholder="Your Name"
                     />
                     <input
                       defaultValue={user.email}
@@ -219,7 +219,7 @@ const SingleFlowerAndCakeItem = () => {
                       required
                       type="text"
                       className="w-full px-4 py-2 outline-none focus:border-pink-900 border-2 bg-white"
-                      placeholder="Your Email*"
+                      placeholder="Your Email"
                     />
                   </div>
                   <input

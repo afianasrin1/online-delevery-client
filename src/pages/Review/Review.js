@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 const Review = ({ id }) => {
   const [review, setReview] = useState([]);
   useEffect(() => {
-    fetch(` http://localhost:5000/review${id}`)
+    fetch(`http://localhost:5000/review/${id}`)
       .then((res) => res.json())
       .then((result) => {
         const reviewData = result.filter((data) => data.reviewId === id);

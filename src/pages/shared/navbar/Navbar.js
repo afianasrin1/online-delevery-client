@@ -73,8 +73,8 @@ const Navbar = () => {
                   <li>
                     <Link
                       to="/review"
-                      aria-label="Our Review"
-                      title="Our Review"
+                      aria-label="All Review"
+                      title="All Review"
                       className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                       // className={({ isActive }) =>
                       //   isActive
@@ -82,7 +82,7 @@ const Navbar = () => {
                       //     : "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-pink-500"
                       // }
                     >
-                      OurReview
+                      All Review
                     </Link>
                   </li>
                 </>
@@ -248,8 +248,8 @@ const Navbar = () => {
                           <li>
                             <Link
                               to="/review"
-                              aria-label="Our Review"
-                              title="Our Review"
+                              aria-label=" All Review"
+                              title=" All Review"
                               className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-pink-500"
                               // className={({ isActive }) =>
                               //   isActive
@@ -257,7 +257,7 @@ const Navbar = () => {
                               //     : "font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-pink-500"
                               // }
                             >
-                              MyReviews
+                              All Review
                             </Link>
                           </li>
                         </>
