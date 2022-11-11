@@ -19,7 +19,7 @@ const AddFlowerAndCakeItem = () => {
       rating: rating,
       details: description,
     };
-    fetch(` http://localhost:5000/flowerAndCakeItems`, {
+    fetch(` https://assignment-11-server-orcin.vercel.app/flowerAndCakeItems`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

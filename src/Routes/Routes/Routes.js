@@ -16,62 +16,67 @@ import SignUp from "../../pages/SignUp/SignUp";
 import PrivatesRoutes from "../PrivateRoute/PrivateRoutes";
 
 export const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Main />,
-		errorElement: <ErrorPage />,
-		children: [
-			{ path: "/", element: <Home /> },
-			{ path: "/home", element: <Home /> },
+  {
+    path: "/",
+    element: <Main />,
+    errorElement: <ErrorPage />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/home", element: <Home /> },
 
-			{
-				path: "/flowerAndCakeItems",
-				loader: async () => fetch("http://localhost:5000/flowerAndCakeItems"),
-				element: <FlowerAndCakeItems />,
-			},
-			{ path: "/ourReview", element: <SingleFlowerAndCakeItem /> },
-			{ path: "/flowerAndCakeItem/:id", element: <SingleFlowerAndCakeItem /> },
-			{
-				path: "/addFlowerAndCakeItem",
-				element: (
-					<PrivatesRoutes>
-						<AddFlowerAndCakeItem />
-					</PrivatesRoutes>
-				),
-			},
+      {
+        path: "/flowerAndCakeItems",
+        loader: async () =>
+          fetch(
+            "https://assignment-11-server-orcin.vercel.app/flowerAndCakeItems"
+          ),
+        element: <FlowerAndCakeItems />,
+      },
+      { path: "/ourReview", element: <SingleFlowerAndCakeItem /> },
+      { path: "/flowerAndCakeItem/:id", element: <SingleFlowerAndCakeItem /> },
+      {
+        path: "/addFlowerAndCakeItem",
+        element: (
+          <PrivatesRoutes>
+            <AddFlowerAndCakeItem />
+          </PrivatesRoutes>
+        ),
+      },
 
-			{
-				path: "/myReview",
-				element: (
-					<PrivatesRoutes>
-						<OurReview />
-					</PrivatesRoutes>
-				),
-			},
-			{
-				path: "/updateReview/:id",
-				loader: async ({ params }) =>
-					fetch(` http://localhost:5000/reviewOne/${params.id}`),
-				element: (
-					<PrivatesRoutes>
-						<UpdateReview />
-					</PrivatesRoutes>
-				),
-			},
-			{ path: "/aboutUs", element: <AboutUs /> },
-			{ path: "/productQuality", element: <ProductsQuality /> },
-			{ path: "/blog", element: <Blog /> },
-			{ path: "/login", element: <Login /> },
-			{ path: "/signUp", element: <SignUp /> },
-			{
-				path: "/profile",
-				element: (
-					<PrivatesRoutes>
-						<Profile />
-					</PrivatesRoutes>
-				),
-			},
-		],
-	},
+      {
+        path: "/myReview",
+        element: (
+          <PrivatesRoutes>
+            <OurReview />
+          </PrivatesRoutes>
+        ),
+      },
+      {
+        path: "/updateReview/:id",
+        loader: async ({ params }) =>
+          fetch(
+            ` https://assignment-11-server-orcin.vercel.app/reviewOne/${params.id}`
+          ),
+        element: (
+          <PrivatesRoutes>
+            <UpdateReview />
+          </PrivatesRoutes>
+        ),
+      },
+      { path: "/aboutUs", element: <AboutUs /> },
+      { path: "/productQuality", element: <ProductsQuality /> },
+      { path: "/blog", element: <Blog /> },
+      { path: "/login", element: <Login /> },
+      { path: "/signUp", element: <SignUp /> },
+      {
+        path: "/profile",
+        element: (
+          <PrivatesRoutes>
+            <Profile />
+          </PrivatesRoutes>
+        ),
+      },
+    ],
+  },
 ]);
 export default router;

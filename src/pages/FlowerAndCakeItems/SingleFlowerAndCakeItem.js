@@ -14,7 +14,9 @@ const SingleFlowerAndCakeItem = () => {
   const { img, title, price, rating, details, _id } = flowerAndCakeItem;
 
   useEffect(() => {
-    fetch(` http://localhost:5000/flowerAndCakeItems/${id}`)
+    fetch(
+      ` https://assignment-11-server-orcin.vercel.app/flowerAndCakeItems/${id}`
+    )
       .then((res) => res.json())
       .then((result) => setFlowerAndCakeItem(result));
   }, [id]);
@@ -37,7 +39,7 @@ const SingleFlowerAndCakeItem = () => {
       flowerAndCakeItemImg: img,
       reviewId: _id,
     };
-    fetch(" http://localhost:5000/review", {
+    fetch(" https://assignment-11-server-orcin.vercel.app/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",

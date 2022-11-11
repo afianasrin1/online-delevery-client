@@ -8,7 +8,9 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 const HomeFlowerAndCakeItems = () => {
   const [flowerAndCakeItems, setFlowerAndCakeItems] = useState([]);
   useEffect(() => {
-    fetch(" http://localhost:5000/limitFlowerAndCakeItems")
+    fetch(
+      " https://assignment-11-server-orcin.vercel.app/limitFlowerAndCakeItems"
+    )
       .then((res) => res.json())
       .then((result) => {
         setFlowerAndCakeItems(result);
