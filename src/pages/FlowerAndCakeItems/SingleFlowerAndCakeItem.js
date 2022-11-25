@@ -21,6 +21,27 @@ const SingleFlowerAndCakeItem = () => {
       .then((result) => setFlowerAndCakeItem(result));
   }, [id]);
   useTitle("flowerAndCakeItem_Details");
+  // const reviewDate = new Date();
+  // date format
+  function formatDate(date) {
+    const yyyy = date.getFullYear();
+    let mm = date.getMonth() + 1;
+    let dd = date.getDate();
+
+    if (dd < 10) dd = "0" + dd;
+    if (mm < 10) mm = "0" + mm;
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    let strTime =
+      hours + ":" + minutes + " " + ampm + " " + dd + "/" + mm + "/" + yyyy;
+    return strTime;
+  }
+
+  const reviewDate = formatDate(new Date());
   const handleReview = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -38,6 +59,7 @@ const SingleFlowerAndCakeItem = () => {
       name,
       flowerAndCakeItemImg: img,
       reviewId: _id,
+      reviewDate,
     };
     fetch(" https://assignment-11-server-orcin.vercel.app/review", {
       method: "POST",
@@ -73,7 +95,6 @@ const SingleFlowerAndCakeItem = () => {
               to="/flowerAndCakeItems"
               className="text-pink-900 text-2xl"
             >
-              {" "}
               <BsBoxArrowRight />
             </Link>
           </div>

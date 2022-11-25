@@ -83,6 +83,9 @@ const OurReview = () => {
                         <FaStar />
                       </small>
                     </h1>
+                    <p title="Client Review" className="text-gray-700">
+                      {review.reviewDate}
+                    </p>
                   </div>
                 </div>
                 <div className="flex sm:flex-col justify-center gap-4 mb-4 sm:mb-0 sm:mt-0 mt-4 sm:ml-2 sm:mr-4">

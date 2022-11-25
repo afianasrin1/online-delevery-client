@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 // import SocialGoogleLogin from "../../Social/SocialGoogleLogin";
 
 const Login = () => {
-  const { singInUser, providerLogin, setLoading } = useContext(AuthContext);
+  const { singInUser, setLoading, googleSignIn } = useContext(AuthContext);
   const [errors, setErrors] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ const Login = () => {
 
   const googleProvider = new GoogleAuthProvider();
   const continueWithGoogle = () => {
-    providerLogin(googleProvider)
+    googleSignIn(googleProvider)
       .then((result) => {
         const user = result.user;
         const currentUser = {
